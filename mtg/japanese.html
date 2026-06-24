@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MTG Japanese Cheat Sheet</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown.min.css">
+
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #ffffff;
+        }
+
+        .markdown-body {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<article id="content" class="markdown-body"></article>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script>
+const markdown = `
+# Core Game Terms
+
+| English     | Japanese | Reading |
+| ----------- | -------- | ------- |
+| Hand        | 手札       | てふだ     |
+| Battlefield | 戦場       | せんじょう   |
+| Graveyard   | 墓地       | ぼち      |
+| Exile       | 追放       | ついほう    |
+| Opponent    | 対戦相手     | たいせんあいて |
+| Token       | トークン     | —       |
+| Counter     | カウンター    | —       |
+| Permanent   | パーマネント   | —       |
+| Library     | ライブラリー   | —       |
+| Stack       | スタック     | —       |
+
+---
+
+# Card Types
+
+| English      | Japanese   | Reading |
+| ------------ | ---------- | ------- |
+| Creature     | クリーチャー     | —       |
+| Artifact     | アーティファクト   | —       |
+| Enchantment  | エンチャント     | —       |
+| Land         | 土地         | とち      |
+| Instant      | インスタント     | —       |
+| Sorcery      | ソーサリー      | —       |
+| Planeswalker | プレインズウォーカー | —       |
+| Battle       | バトル        | —       |
+
+---
+
+# Colors
+
+| English   | Japanese | Reading |
+| --------- | -------- | ------- |
+| White     | 白        | しろ      |
+| Blue      | 青        | あお      |
+| Black     | 黒        | くろ      |
+| Red       | 赤        | あか      |
+| Green     | 緑        | みどり     |
+| Colorless | 無色       | むしょく    |
+
+---
+
+# Turn Structure
+
+| English    | Japanese   | Reading    |
+| ---------- | ---------- | ---------- |
+| Untap Step | アンタップ・ステップ | —          |
+| Upkeep     | アップキープ     | —          |
+| Draw Step  | ドロー・ステップ   | —          |
+| Main Phase | メイン・フェイズ   | —          |
+| Combat     | 戦闘         | せんとう       |
+| End Step   | 終了ステップ     | しゅうりょうステップ |
+| Turn       | ターン        | —          |
+
+---
+
+# Common Actions
+
+| English           | Japanese | Reading |
+| ----------------- | -------- | ------- |
+| Cast              | 唱える      | となえる    |
+| Draw a card       | カードを引く   | ひく      |
+| Discard           | 捨てる      | すてる     |
+| Destroy           | 破壊する     | はかいする   |
+| Exile             | 追放する     | ついほうする  |
+| Sacrifice         | 生け贄にする   | いけにえにする |
+| Return            | 戻す       | もどす     |
+| Search            | 探す       | さがす     |
+| Shuffle           | 切り直す     | きりなおす   |
+| Reveal            | 公開する     | こうかいする  |
+| Target            | 対象       | たいしょう   |
+| Choose            | 選ぶ       | えらぶ     |
+| Copy              | コピーする    | —       |
+| Counter (a spell) | 打ち消す     | うちけす    |
+| Gain life         | ライフを得る   | える      |
+| Lose life         | ライフを失う   | うしなう    |
+
+---
+
+# Combat Vocabulary
+
+| English            | Japanese    | Reading    |
+| ------------------ | ----------- | ---------- |
+| Attack             | 攻撃する        | こうげきする     |
+| Attacking Creature | 攻撃クリーチャー    | こうげきクリーチャー |
+| Block              | ブロックする      | —          |
+| Blocking Creature  | ブロック・クリーチャー | —          |
+| Combat Damage      | 戦闘ダメージ      | せんとうダメージ   |
+| Damage             | ダメージ        | —          |
+| Power              | パワー         | —          |
+| Toughness          | タフネス        | —          |
+
+---
+
+# Evergreen Keywords
+
+| English        | Japanese | Reading  |
+| -------------- | -------- | -------- |
+| Flying         | 飛行       | ひこう      |
+| First Strike   | 先制攻撃     | せんせいこうげき |
+| Double Strike  | 二段攻撃     | にだんこうげき  |
+| Trample        | トランプル    | —        |
+| Vigilance      | 警戒       | けいかい     |
+| Haste          | 速攻       | そっこう     |
+| Reach          | 到達       | とうたつ     |
+| Deathtouch     | 接死       | せっし      |
+| Lifelink       | 絆魂       | はんこん     |
+| Menace         | 威迫       | いはく      |
+| Hexproof       | 呪禁       | じゅごん     |
+| Ward           | 護法       | ごほう      |
+| Defender       | 防衛       | ぼうえい     |
+| Flash          | 瞬速       | しゅんそく    |
+| Indestructible | 破壊不能     | はかいふのう   |
+| Protection     | プロテクション  | —        |
+
+---
+
+# Trigger Phrases
+
+These are some of the highest-value phrases to memorize.
+
+| English                          | Japanese   | Reading       |
+| -------------------------------- | ---------- | ------------- |
+| When this enters the battlefield | これが戦場に出たとき | これがせんじょうにでたとき |
+| Whenever                         | ～するたび      | ～するたび         |
+| At the beginning of              | ～の開始時に     | ～のかいしじに       |
+| When this dies                   | これが死亡したとき  | これがしぼうしたとき    |
+| When you cast                    | あなたが唱えたとき  | あなたがとなえたとき    |
+| If                               | もし～なら      | —             |
+| Unless                           | ～しないかぎり    | —             |
+| You may                          | ～してもよい     | —             |
+| Until end of turn                | ターン終了時まで   | ターンしゅうりょうじまで  |
+| End of turn                      | ターン終了時に    | ターンしゅうりょうじに   |
+
+---
+
+# Zone Movement
+
+| English               | Japanese | Reading    |
+| --------------------- | -------- | ---------- |
+| Enter the battlefield | 戦場に出る    | せんじょうにでる   |
+| Leave the battlefield | 戦場を離れる   | せんじょうをはなれる |
+| Dies                  | 死亡する     | しぼうする      |
+| Return to hand        | 手札に戻す    | てふだにもどす    |
+| Put into graveyard    | 墓地に置く    | ぼちにおく      |
+| Exile from graveyard  | 墓地から追放する | ぼちからついほうする |
+
+---
+
+# Commander Terms
+
+| English        | Japanese | Reading     |
+| -------------- | -------- | ----------- |
+| Commander      | 統率者      | とうそつしゃ      |
+| Command Zone   | 統率者領域    | とうそつしゃりょういき |
+| Command Tax    | 統率者税     | とうそつしゃぜい    |
+| Color Identity | 固有色      | こゆうしょく      |
+
+---
+
+# The 25 Most Important Kanji to Memorize
+
+| Kanji | Reading | Meaning      |
+| ----- | ------- | ------------ |
+| 戦場    | せんじょう   | Battlefield  |
+| 墓地    | ぼち      | Graveyard    |
+| 追放    | ついほう    | Exile        |
+| 破壊    | はかい     | Destroy      |
+| 攻撃    | こうげき    | Attack       |
+| 防衛    | ぼうえい    | Defender     |
+| 対象    | たいしょう   | Target       |
+| 選ぶ    | えらぶ     | Choose       |
+| 引く    | ひく      | Draw         |
+| 捨てる   | すてる     | Discard      |
+| 得る    | える      | Gain         |
+| 失う    | うしなう    | Lose         |
+| 唱える   | となえる    | Cast         |
+| 公開    | こうかい    | Reveal       |
+| 探す    | さがす     | Search       |
+| 戻す    | もどす     | Return       |
+| 死亡    | しぼう     | Die          |
+| 開始時   | かいしじ    | Beginning of |
+| 終了時   | しゅうりょうじ | End of       |
+| 先制    | せんせい    | First strike |
+| 警戒    | けいかい    | Vigilance    |
+| 速攻    | そっこう    | Haste        |
+| 接死    | せっし     | Deathtouch   |
+| 呪禁    | じゅごん    | Hexproof     |
+| 統率者   | とうそつしゃ  | Commander    |
+
+## Small Reading Note
+
+A few keyword readings are not what you'd necessarily guess from normal Japanese:
+
+* 絆魂 → **はんこん** (Lifelink)
+* 呪禁 → **じゅごん** (Hexproof)
+* 威迫 → **いはく** (Menace)
+* 接死 → **せっし** (Deathtouch)
+* 護法 → **ごほう** (Ward)
+
+These are worth memorizing as complete vocabulary items because they appear repeatedly on cards.
+`;
+
+document.getElementById("content").innerHTML =
+    marked.parse(markdown);
+</script>
+
+</body>
+</html>
